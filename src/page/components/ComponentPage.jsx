@@ -76,7 +76,7 @@ const ComponentPage = () => {
         {copied ? "Copied!" : "Copy Code"}
       </button>
 
-      <pre className="bg-[#FAFAFA] dark:bg-[#0A0A0A] border dark:border-[#252525] border-[#EBEBEB] p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-[#FAFAFA] dark:bg-[#18181a] dark:text-gray-300 border dark:border-[#252525] border-[#EBEBEB] p-4 rounded-lg overflow-x-auto">
         <code>{code}</code>
       </pre>
     </div>
