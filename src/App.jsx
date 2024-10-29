@@ -13,6 +13,7 @@ import ButtonComponent from "./page/components/ButtonComponent";
 import CardComponent from "./page/components/CardComponent";
 import NotFoundPage from "./page/NotFoundPage"; // Adjust the path accordingly
 import EnjoySajhiloUI from "./components/EnjoySajhiloUI";
+import ComponentPage from "./page/components/ComponentPage";
 
 const App = () => {
   return (
@@ -31,6 +32,8 @@ const App = () => {
             <Route path="/components/footer" element={<FooterComponent />} />
             <Route path="/about" element={<About />} />
             <Route element={<NotFoundPage />} path="*" />
+            <Route path="/component/:id" element={<ComponentPage />} />
+
             {/* This will catch all unmatched routes */}
             {/* Add more routes as needed */}
           </Routes>
