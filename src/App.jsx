@@ -28,7 +28,7 @@ const App = () => {
             <Route path="/components/cards" element={<CardComponent />} />
             <Route path="/components/footer" element={<FooterComponent />} />
             <Route path="/about" element={<About />} />
-            <Route element={<NotFoundPage />} path="*" />{" "}
+            <Route element={<NotFoundPage />} path="*" />
             {/* This will catch all unmatched routes */}
             {/* Add more routes as needed */}
           </Routes>

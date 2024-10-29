@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaBars, FaTimes } from "react-icons/fa"; // Import the menu icons
 import ThemeToggler from "./ThemeToggler"; // Import the Theme Toggler
+import { VscSymbolInterface } from "react-icons/vsc";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,8 +42,9 @@ const Navbar = () => {
       <nav className="container mx-auto flex justify-between items-center px-4 py-4">
         <Link
           to="/"
-          className="text-2xl font-bold text-gray-900 dark:text-white"
+          className="text-xl font-bold flex items-center gap-2 text-gray-900 dark:text-white"
         >
+          <VscSymbolInterface className="bg-black dark:bg-white dark:text-black text-white rounded-lg  h-8 w-8 p-1" />
           Sajilo UI
         </Link>
 
