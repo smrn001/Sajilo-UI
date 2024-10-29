@@ -1,8 +1,24 @@
 import componentsData from "../data/components.json";
+const Breadcrumb = () => {
+  return (
+    <nav className="flex items-center mb-4" aria-label="Breadcrumb">
+      <ol className="list-none p-0 flex">
+        <li>
+          <a href="/" className="text-black   dark:text-white">
+            Home
+          </a>
+        </li>
+        <li className="mx-2">/</li>
+        <li>Components</li>
+      </ol>
+    </nav>
+  );
+};
 
 const Components = () => {
   return (
     <div className="container mx-auto p-8 bg-white dark:bg-black text-gray-900 dark:text-gray-100 ">
+      <Breadcrumb />
       <h1 className="text-4xl font-bold mb-4 text-center">
         Sajilo UI Components 🚀
       </h1>

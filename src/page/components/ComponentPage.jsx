@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import componentsData from "../../data/components.json";
 import { useState, useEffect } from "react";
 
+
 const ComponentPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -35,9 +36,34 @@ const ComponentPage = () => {
       });
   };
 
+  const Breadcrumb = () => {
+    return (
+      <nav className="flex items-center mb-4" aria-label="Breadcrumb">
+        <ol className="list-none p-0 flex">
+          <li>
+            <a href="/" className="text-gray-500 dark:text-gray-400">
+              Home
+            </a>
+          </li>
+          <li className="mx-2">/</li>
+          <li>
+            <a href="/components" className="text-gray-500 dark:text-gray-400">
+              Components
+            </a>
+          </li>
+          <li className="mx-2">/</li>
+          <li className="text-gray-500 dark:text-gray-400">{title}</li>
+        </ol>
+      </nav>
+    );
+  };
+  
+
   return (
     <div className="container mx-auto p-8 bg-white dark:bg-black text-gray-900 dark:text-gray-100">
-      <h1 className="md:text-4xl  text-3xl font-bold mb-4">{title}</h1>
+      <Breadcrumb /> {/* Add the Breadcrumb component here */}
+      
+      <h1 className="md:text-4xl text-3xl font-bold mb-4">{title}</h1>
       <h2 className="text-2xl font-semibold mt-8 mb-4">Preview</h2>
 
       <output dangerouslySetInnerHTML={{ __html: code }} />
@@ -45,8 +71,7 @@ const ComponentPage = () => {
       <h2 className="text-2xl font-semibold mt-8 mb-4">Usage</h2>
       <button
         onClick={handleCopy}
-        className="bg-white mb-3 dark:bg-black text-black dark:text-white px-6 py-2 border dark:border-[#252525] border-[#EBEBEB] rounded-lg font-semibold "
-
+        className="bg-white mb-3 dark:bg-black text-black dark:text-white px-6 py-2 border dark:border-[#252525] border-[#EBEBEB] rounded-lg font-semibold"
       >
         {copied ? "Copied!" : "Copy Code"}
       </button>
