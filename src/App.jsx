@@ -12,12 +12,14 @@ import FooterComponent from "./page/components/FooterComponent";
 import ButtonComponent from "./page/components/ButtonComponent";
 import CardComponent from "./page/components/CardComponent";
 import NotFoundPage from "./page/NotFoundPage"; // Adjust the path accordingly
+import EnjoySajhiloUI from "./components/EnjoySajhiloUI";
 
 const App = () => {
   return (
     <ThemeProvider>
       <Router>
         <Navbar />
+        <EnjoySajhiloUI/>
         <main className="min-h-screen bg-white dark:bg-black">
           <Routes>
             <Route path="/" element={<Home />} />

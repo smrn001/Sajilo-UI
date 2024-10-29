@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaBars, FaTimes } from "react-icons/fa"; // Import the menu icons
-import ThemeToggler from "./ThemeToggler"; // Import the Theme Toggler
+import { FaGithub, FaBars, FaTimes } from "react-icons/fa";
+import ThemeToggler from "./ThemeToggler";
 import { VscSymbolInterface } from "react-icons/vsc";
 
 const Navbar = () => {
@@ -25,9 +25,7 @@ const Navbar = () => {
     const handleKeyDown = (event) => {
       if ((event.metaKey || event.ctrlKey) && event.key === "k") {
         event.preventDefault();
-        if (searchInputRef.current) {
-          searchInputRef.current.focus();
-        }
+        searchInputRef.current?.focus();
       }
     };
 
@@ -37,14 +35,20 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    // Add search handling logic here
+    console.log("Searching for:", searchTerm);
+  };
+
   return (
-    <header className="bg-[#FAFAFA] dark:bg-[#0A0A0A] dark:border-[#252525] border-[#EBEBEB] border-b">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FAFAFA] dark:bg-[#0A0A0A] border-b dark:border-[#252525] border-[#EBEBEB]">
       <nav className="container mx-auto flex justify-between items-center px-4 py-4">
         <Link
           to="/"
           className="text-xl font-bold flex items-center gap-2 text-gray-900 dark:text-white"
         >
-          <VscSymbolInterface className="bg-black dark:bg-white dark:text-black text-white rounded-lg  h-8 w-8 p-1" />
+          <VscSymbolInterface className="bg-black dark:bg-white dark:text-black text-white rounded-lg h-8 w-8 p-1" />
           Sajilo UI
         </Link>
 
@@ -57,6 +61,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-700 dark:text-gray-300 font-semibold hover:text-gray-900 dark:hover:text-gray-400"
+                aria-label={`Go to ${link.name}`}
               >
                 {link.icon}
                 <span className="ml-1">{link.name}</span>
@@ -66,6 +71,7 @@ const Navbar = () => {
                 key={index}
                 to={link.path}
                 className="text-gray-700 dark:text-gray-300 font-semibold hover:text-gray-900 dark:hover:text-gray-400"
+                aria-label={`Navigate to ${link.name}`}
               >
                 {link.name}
               </Link>
@@ -76,27 +82,32 @@ const Navbar = () => {
             <button
               className="md:hidden text-gray-700 dark:text-gray-300"
               onClick={() => setMenuOpen(!menuOpen)}
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
             >
-              {menuOpen ? <FaTimes /> : <FaBars />} {/* Menu icon */}
+              {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-          <input
-            ref={searchInputRef}
-            type="text"
-            placeholder="Search components..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="ml-4 p-1 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:ring-gray-500 dark:border-gray-600 dark:bg-[#0A0A0A] dark:text-white"
-          />
+          <form onSubmit={handleSearchSubmit} className="ml-4">
+            <input
+              ref={searchInputRef}
+              type="text"
+              placeholder="Search components..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="p-1 border border-gray-300 rounded-xl focus:outline-none focus:ring focus:ring-gray-500 dark:border-gray-600 dark:bg-[#0A0A0A] dark:text-white"
+            />
+          </form>
         </div>
 
+        {/* Mobile Menu */}
         <div className="md:hidden flex">
           <ThemeToggler />
           <button
-            className="md:hidden text-gray-700 dark:text-gray-300"
+            className="text-gray-700 dark:text-gray-300"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            {menuOpen ? <FaTimes /> : <FaBars />} {/* Menu icon */}
+            {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
 
@@ -112,6 +123,7 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                     className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                     onClick={() => setMenuOpen(false)}
+                    aria-label={`Go to ${link.name}`}
                   >
                     {link.icon}
                     <span className="ml-1">{link.name}</span>
@@ -122,19 +134,22 @@ const Navbar = () => {
                     to={link.path}
                     className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                     onClick={() => setMenuOpen(false)}
+                    aria-label={`Navigate to ${link.name}`}
                   >
                     {link.name}
                   </Link>
                 )
               )}
-              <input
-                ref={searchInputRef}
-                type="text"
-                placeholder="Search components..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-              />
+              <form onSubmit={handleSearchSubmit}>
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  placeholder="Search components..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                />
+              </form>
             </div>
           </div>
         )}
