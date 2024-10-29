@@ -1,21 +1,27 @@
 [
     {
-      "id": "header1",
+      "id": "header",
       "title": "Header Component",
       "description": "This is the header component for the app",
       "code": "<header class=\"bg-[#FAFAFA] dark:bg-[#0A0A0A] border-b dark:border-[#252525] border-[#EBEBEB]\">\n    <div class=\"container mx-auto flex justify-between items-center p-6\">\n        <h1 class=\"text-3xl font-bold text-gray-900 dark:text-white\">My App</h1>\n        <nav>\n            <div class=\"block lg:hidden\">\n                <button class=\"text-gray-700 focus:outline-none\" id=\"menu-toggle\" onclick=\"toggleMenu()\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\" />\n                    </svg>\n                </button>\n            </div>\n            <ul class=\"hidden lg:flex space-x-6 text-gray-700 dark:text-white\">\n                <li><a href=\"#\" class=\"hover:text-gray-900 dark:hover:text-gray-400 transition font-semibold\">Home</a></li>\n                <li><a href=\"#\" class=\"hover:text-gray-900 dark:hover:text-gray-400 transition font-semibold\">About</a></li>\n                <li><a href=\"#\" class=\"hover:text-gray-900 dark:hover:text-gray-400 transition font-semibold\">Services</a></li>\n                <li><a href=\"#\" class=\"hover:text-gray-900 dark:hover:text-gray-400 transition font-semibold\">Contact</a></li>\n            </ul>\n        </nav>\n    </div>\n\n    <div class=\"lg:hidden\">\n        <ul id=\"menu\" class=\"hidden text-gray-700 dark:text-white bg-white dark:bg-[#0A0A0A] rounded-lg shadow-md absolute left-0 w-full\">\n            <li><a href=\"#\" class=\"block px-4 py-2 font-semibold\">Home</a></li>\n            <li><a href=\"#\" class=\"block px-4 py-2 font-semibold\">About</a></li>\n            <li><a href=\"#\" class=\"block px-4 py-2 font-semibold\">Services</a></li>\n            <li><a href=\"#\" class=\"block px-4 py-2 font-semibold\">Contact</a></li>\n        </ul>\n    </div>\n</header>\n\n<script>\n    let menuOpen = false;\n    function toggleMenu() {\n        menuOpen = !menuOpen;\n        const menu = document.querySelector('#menu');\n        if (menuOpen) {\n            menu.classList.remove('hidden');\n            menu.classList.add('block');\n        } else {\n            menu.classList.remove('block');\n            menu.classList.add('hidden');\n        }\n    }\n</script>"
     },
     {
-      "id": "footer1",
+      "id": "footer",
       "title": "Footer Component",
       "description": "This is the footer component for the app",
       "code": "<footer class=\"bg-[#FAFAFA] border-t border-[#EBEBEB] text-gray-800 dark:bg-[#0A0A0A] dark:border-[#252525] dark:text-white\">\n  <div class=\"container mx-auto flex flex-col md:flex-row justify-between items-center p-6\">\n    <div class=\"text-center md:text-left\">\n      <p class=\"text-lg\">&copy; 2024 My App. All rights reserved.</p>\n    </div>\n    <div class=\"flex space-x-4 mt-4 md:mt-0\">\n      <a href=\"/privacy\" class=\"hover:text-blue-400 transition\">Privacy Policy</a>\n      <a href=\"/terms\" class=\"hover:text-blue-400 transition\">Terms of Service</a>\n      <a href=\"/contact\" class=\"hover:text-blue-400 transition\">Contact Us</a>\n    </div>\n  </div>\n</footer>"
     },
     {
         "id": "button",
-        "title": "Button",
-        "description": "A customizable button component.",
-        "code": "<button \n  class='px-4 py-2 bg-blue-500 text-white rounded'>\n  Click Me\n  </button>"
+        "title": " Button primary",
+        "description": "A customizable primary button component.",
+        "code": "<button class='px-4 py-2 bg-blue-500 text-white rounded'>Click Me</button>"
+      },
+      {
+        "id": "button",
+        "title": " Button secondary",
+        "description": "A customizable secondary button component.",
+        "code": "<button class='px-4 py-2 bg-gray-500 text-white rounded'>Click Me Too</button>"
       },
       {
         "id": "card",
