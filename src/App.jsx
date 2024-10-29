@@ -17,7 +17,7 @@ const App = () => {
       <Router>
         <Navbar />
         <EnjoySajhiloUI />
-        <main className="min-h-screen bg-white dark:bg-black">
+        <main className="min-h-screen w-[100vw] bg-white dark:bg-black">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/docs" element={<Docs />} />
