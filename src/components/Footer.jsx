@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"; // Use react-router-dom for navigation
-import { FaGithub } from "react-icons/fa"; // Import GitHub icon
+import React from "react";
 
 const Footer = () => {
   return (
