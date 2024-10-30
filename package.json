@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-  "pnpm": "8.x"
+  "pnpm": "9.x"
 },
   "scripts": {
     "dev": "tsc && next dev",
