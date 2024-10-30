@@ -38,6 +38,14 @@
           "parentlink": "navbar",
           "parentName": "navbar"
         }
+        ,
+        {
+          "componentName": "navbarcomponent2",
+          "filesrc": "components/navbar/jynx.tsx",
+          "iframeSrc": "live-components/navbarcomponent2",
+          "parentlink": "navbar",
+          "parentName": "navbar"
+        }
       ],
       "type": "hello"
     },
