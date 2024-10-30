@@ -30,10 +30,15 @@ dist-ssr
 *.sln
 *.sw?
 # next.js
-/.next/
-/out/
-.next
-.next/
+ .next/
+out/
+build
+dist
+# testing
+/coverage
+/.nyc_output
+
+
 
 # production
 /build# debug
