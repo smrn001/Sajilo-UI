@@ -98,20 +98,7 @@
       ],
       "type": "buttons"
     },
-    {
-      "name": "Clip-Path",
-      "componentArray": [
-        {
-          "componentName": "creative-clippath",
-          "filesrc": "components/clip-path/clip-path-creative.tsx",
-          "iframeSrc": "live-components/creative-clippath",
-          "parentlink": "clip-path",
-          "parentName": "Clip Path"
-        }
-      ],
-      "type": "clip-path",
-      "new": true
-    },
+   
     {
       "name": "Product Cards",
       "componentArray": [
@@ -133,31 +120,7 @@
       "type": "card"
     },
     
-    {
-      "name": "Horizontal Scroll",
-      "componentArray": [
-        {
-          "componentName": "horizontalscroll",
-          "iframelink": "horizontal-scrolling-section",
-          "parentlink": "horizontal-scroll",
-          "parentName": "Horizontal Scroll"
-        },
-        {
-          "componentName": "framerhorizontalscroll",
-          "filesrc": "components/scroll-animation/framer-horizontal-scroll.tsx",
-          "iframeSrc": "live-components/framerhorizontalscroll",
-          "filesArray": [
-            {
-              "name": "index.tsx",
-              "filesrc": "registry/components/scroll-animation/framer-horizontal-scroll.tsx"
-            }
-          ],
-          "parentlink": "horizontal-scroll",
-          "parentName": "Horizontal Scroll"
-        }
-      ],
-      "type": "horizontal-scroll"
-    },
+   
     {
       "name": "Blur Vignette",
       "componentArray": [

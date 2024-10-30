@@ -1,9 +1,6 @@
 export const SpecialComponents = [
   { href: '/components/buttons', name: 'Buttons' },
-  {
-    href: '/components/clip-path',
-    name: 'Clip Path',
-  },
+  
   {
     href: '/components/product-cards',
     name: 'Products-Cards',
@@ -11,7 +8,6 @@ export const SpecialComponents = [
   },
 
   { href: '/components/footers', name: 'Footers' , new: true},
-  { href: '/components/horizontal-scroll', name: 'Horizontal Scroll' },
   {
     href: '/components/demo',
     name: 'Demo Components',
