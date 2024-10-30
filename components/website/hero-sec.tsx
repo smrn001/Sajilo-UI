@@ -92,8 +92,8 @@ function HeroSec() {
             </span>
           </h1>
           <p className='mx-auto lg:w-[500px] sm:w-[80%] text-center sm:text-lg text-sm'>
-            100+ Free beautifull interactive react/nextjs component based on
-            tailwindcss, framer-motion, gsap etc
+            Sajilo UI is a collection of beautiful, responsive, and accessible
+            React components.
           </p>
           <div className='flex gap-2 justify-center items-center'>
             <a

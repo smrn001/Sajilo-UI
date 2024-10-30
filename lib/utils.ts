@@ -47,16 +47,10 @@ export function throttle(fn: (...args: any[]) => any, wait: number) {
 }
 
 export const siteConfig = {
-  name: 'UI-Layout-starter-kit',
-  url: 'https://uilayout-starter-repo.vercel.app/',
-  ogImage: 'https://uilayout-starter-repo.vercel.app/og.jpg',
+  name: 'Sajilo UI',
+  url: 'https://sajilo-ui.vercel.app/',
   description:
-    'An open-source starter repo for those who want to create their own component library.',
-  links: {
-    twitter: 'https://twitter.com/naymur_dev',
-    linkedin: 'https://www.linkedin.com/in/naymur-rahman',
-    github: 'https://github.com/naymurdev',
-  },
+    'Sajilo UI is a collection of beautiful, responsive, and accessible React components.',
 };
 
 export type SiteConfig = typeof siteConfig;
