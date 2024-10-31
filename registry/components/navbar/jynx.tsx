@@ -47,7 +47,7 @@ const handleNavLinkClick = useCallback((link: NavLink) => {
           <div className='flex items-center gap-2'>
             logo
             <p className='text-gray-900 dark:text-slate-100 font-bold font-apple text-2xl cursor-default tracking-wide'>
-              JYNX
+              Name
             </p>
           </div>
         </a>
@@ -75,7 +75,7 @@ const handleNavLinkClick = useCallback((link: NavLink) => {
             rel='noopener noreferrer'
             className='hidden sm:block bg-red-600 dark:bg-red-700 font-apple px-3 py-2 text-sm font-semibold transition duration-300 rounded-xl text-white'
           >
-            Let&apos;s Chat
+            Text
           </a>
 
           <button

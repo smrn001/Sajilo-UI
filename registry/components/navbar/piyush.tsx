@@ -13,17 +13,17 @@ const Header = () => {
         {/* Profile Info */}
         <div className="text-center md:text-left">
           <h2 className="headerText text-2xl  font-bold mb-1 dark:text-white text-black">
-            Piyush Karn
+            Your Name
           </h2>
           <p className="dark:text-white text-gray-900 mb-1">
-            Student | Full stack developer
+            Your Role
           </p>
           <a
-            href="https://www.google.com/maps/place/Jhapa"
+            href="https://www.google.com/maps"
             rel="noopener noreferrer"
             className="hover:underline dark:text-white text-gray-900"
           >
-            Jhapa, Nepal
+            Address Here
           </a>
         </div>
       </div>
@@ -31,25 +31,25 @@ const Header = () => {
       {/* Social Icons */}
       <div className="flex justify-center md:justify-center items-center space-x-5">
         <a
-          href="https://x.com/piyushkarn69"
+          href="https://x.com"
           rel="noopener noreferrer"
         >
           <FaTwitter className="dark:text-white text-gray-900 text-2xl dark:hover:text-blue-500 hover:text-blue-500" />
         </a>
         <a
-          href="https://github.com/piiyuushh"
+          href="https://github.com"
           rel="noopener noreferrer"
         >
           <FaGithub className="dark:text-white text-gray-900 text-2xl dark:hover:text-indigo-500 hover:text-indigo-500" />
         </a>
         <a
-          href="https://www.linkedin.com/in/piyushkarn-314a5b2a2/"
+          href="https://www.linkedin.com"
           rel="noopener noreferrer"
         >
           <FaLinkedin className="dark:text-white text-gray-900 text-2xl dark:hover:text-blue-500 hover:text-blue-500" />
         </a>
         <a
-          href="https://www.instagram.com/piyushkarn87/"
+          href="https://www.instagram.com"
           rel="noopener noreferrer"
         >
           <FaInstagram className="dark:text-white text-gray-900 text-2xl dark:hover:text-pink-500 hover:text-pink-500" />

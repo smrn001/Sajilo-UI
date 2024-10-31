@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: 'About', path: '#' },
     {
       name: '',
-      path: 'https://github.com/smrn001/Sajilo-UI',
+      path: 'https://github.com',
       external: true,
       icon: <FaGithub />,
     },
@@ -28,7 +28,7 @@ const Navbar = () => {
           className='text-xl font-bold flex items-center gap-2 text-gray-900 dark:text-white'
         >
           <VscSymbolInterface className='bg-black dark:bg-white dark:text-black text-white rounded-lg h-8 w-8 p-1' />
-          Sajilo UI
+          Name
         </a>
 
         <div className='hidden md:flex space-x-4 items-center'>
