@@ -13,6 +13,20 @@
       ],
       "type": "demo"
     },
+
+    {
+      "name": "bentogrid",
+      "componentArray": [
+        {
+          "componentName": "bentogridcomonent",
+          "filesrc": "components/bentogrid/sarbeshwor.tsx",
+          "iframeSrc": "live-components/bentogrid",
+          "parentlink": "bentogrid",
+          "parentName": "bentogrid"
+        }
+      ],
+      "type": "bentogrid"
+    },
     {
       "name": "hero",
       "componentArray": [

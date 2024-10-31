@@ -13,6 +13,10 @@ export const SpecialComponents = [
     name: 'Demo Components',
   },
   {
+    href: '/components/bentogrid',
+    name: 'Bento Grid ',
+  },
+  {
     href: '/components/hero',
     name: 'Hero Section',
   },
