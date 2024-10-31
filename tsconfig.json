@@ -30,6 +30,6 @@
     "lib/**/*",
     "configs/docs.js",
     "configs/docs.js"
-  ],
+, "content/components/hero.mdx"  ],
   "exclude": ["node_modules"]
 }

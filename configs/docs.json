@@ -14,6 +14,19 @@
       "type": "demo"
     },
     {
+      "name": "hero",
+      "componentArray": [
+        {
+          "componentName": "herocomponent",
+          "filesrc": "components/hero/sarbeshwor.tsx",
+          "iframeSrc": "live-components/herocomponent",
+          "parentlink": "hero",
+          "parentName": "hero"
+        }
+      ],
+      "type": "hero"
+    },
+    {
       "name": "card",
       "componentArray": [
         {

@@ -12,6 +12,10 @@ export const SpecialComponents = [
     href: '/components/demo',
     name: 'Demo Components',
   },
+  {
+    href: '/components/hero',
+    name: 'Hero Section',
+  },
 
   {
     href: '/components/navbar',
