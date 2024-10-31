@@ -13,6 +13,19 @@
       ],
       "type": "demo"
     },
+    {
+      "name": "form",
+      "componentArray": [
+        {
+          "componentName": "formcomponent",
+          "filesrc": "components/form/form1.tsx",
+          "iframeSrc": "live-components/formcomponent",
+          "parentlink": "form",
+          "parentName": "form"
+        }
+      ],
+      "type": "form"
+    },
 
     {
       "name": "bentogrid",

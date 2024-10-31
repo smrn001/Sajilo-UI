@@ -20,6 +20,10 @@ export const SpecialComponents = [
     href: '/components/hero',
     name: 'Hero Section',
   },
+  {
+    href: '/components/form',
+    name: 'Form ',
+  },
 
   {
     href: '/components/navbar',
@@ -27,7 +31,6 @@ export const SpecialComponents = [
     new: true,
   },
 ];
-
 
 // export const MainComponents = [
 //   {
