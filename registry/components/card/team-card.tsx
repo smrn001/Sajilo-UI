@@ -90,7 +90,7 @@ interface TeamMember {
 }
 
 const TeamMemberCard = ({ member }: { member: TeamMember }) => (
-  <div className='bg-white dark:bg-[#09090B] border border-gray-300 dark:border-[#27272A] text-gray-800 dark:text-gray-200 rounded-lg p-6 shadow-md hover:shadow-lg  flex flex-col justify-around transition-shadow duration-200 ease-in-out'>
+  <div className='bg-white w-auto  dark:bg-[#09090B] border border-gray-300 dark:border-[#27272A] text-gray-800 dark:text-gray-200 rounded-lg p-6 shadow-md hover:shadow-lg  flex flex-col justify-around transition-shadow duration-200 ease-in-out'>
     <img
       src={member.imgSrc}
       alt={member.name}
@@ -125,7 +125,7 @@ const TeamSection = () => (
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
       repudiandae volupta
     </p>
-    <div className='max-w-4xl mx-auto grid gap-8 px- sm:px-6 lg:px-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
+    <div className='max-w-4xl mx-2 grid gap-2   sm:px-6 lg:px-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
       {teamMembers.map((member, index) => (
         <TeamMemberCard key={index} member={member} />
       ))}
