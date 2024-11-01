@@ -5,10 +5,28 @@ import Image from 'next/image';
 import preview from '@/assets/preview';
 const appsDesign = [
   {
+    id: 'navbar',
+    url: '/components/navbar',
+    name: 'navbar',
+    imgSrc: preview.navbar,
+  },
+  {
+    id: 'hero',
+    url: '/components/hero',
+    name: 'Hero Section',
+    imgSrc: preview.hero,
+  },
+  {
     id: 'bentogrid',
     url: '/components/bentogrid',
     name: 'bentogrid',
     imgSrc: preview.bentogrid,
+  },
+  {
+    id: 'cards',
+    url: '/components/card',
+    name: 'Cards',
+    imgSrc: preview.card,
   },
   {
     id: 'form',
@@ -17,24 +35,12 @@ const appsDesign = [
     imgSrc: preview.form,
   },
   {
-    id: 'navbar',
-    url: '/components/navbar',
-    name: 'navbar',
-    imgSrc: preview.navbar,
+    id: 'footer',
+    url: '/components/footers',
+    name: 'footer',
+    imgSrc: preview.footer,
   },
 
-  {
-    id: 'cards',
-    url: '/components/card',
-    name: 'Cards',
-    imgSrc: preview.card,
-  },
-  {
-    id: 'hero',
-    url: '/components/hero',
-    name: 'Hero Section',
-    imgSrc: preview.hero,
-  },
 ];
 
 export default function Home() {
