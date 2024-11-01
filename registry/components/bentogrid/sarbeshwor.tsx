@@ -2,49 +2,37 @@ import React from 'react';
 
 const images = [
   {
-    src: 'https://placehold.co/300x200',
+    src: 'https://images.unsplash.com/photo-1729641962638-386ca5e61f35?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Beautiful Landscape 4',
   },
   {
-    src: 'https://placehold.co/300x400',
+    src: 'https://images.unsplash.com/photo-1727713144442-69f31f0510ba?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Beautiful Landscape 2',
   },
   {
-    src: 'https://placehold.co/300x200',
+    src: 'https://images.unsplash.com/photo-1730131837094-5e5259fb2854?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Beautiful Landscape 3',
   },
   {
-    src: 'https://placehold.co/300x400',
+    src: 'https://images.unsplash.com/photo-1513614835783-51537729c8ba?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Beautiful Landscape 7',
   },
 
   {
-    src: 'https://placehold.co/300x400',
+    src: 'https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Beautiful Landscape 5',
   },
   {
-    src: 'https://placehold.co/300x200',
+    src: 'https://images.unsplash.com/photo-1529733905113-027ed85d7e33?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Beautiful Landscape 6',
   },
   {
-    src: 'https://placehold.co/300x400',
-    alt: 'Beautiful Landscape 8',
-  },
-  {
-    src: 'https://placehold.co/300x200',
-    alt: 'Beautiful Landscape 7',
-  },
-  {
-    src: 'https://placehold.co/300x600',
+    src: 'https://images.unsplash.com/photo-1504448252408-b32799ff32f3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Beautiful Landscape 1',
   },
   {
-    src: 'https://placehold.co/300x400',
-    alt: 'Beautiful Landscape 5',
-  },
-  {
-    src: 'https://placehold.co/300x200',
-    alt: 'Beautiful Landscape 6',
+    src: 'https://images.unsplash.com/photo-1533130061792-64b345e4a833?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: 'Beautiful Landscape 8',
   },
 ];
 
