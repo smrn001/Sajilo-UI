@@ -8,6 +8,7 @@ export const SpecialComponents = [
   { href: '/components/hero', name: 'Hero Section' },
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/navbar', name: 'Navbar ', new: true },
+  { href: '/components/table', name: 'Table ' },
 ];
 
 // export const MainComponents = [
