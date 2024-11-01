@@ -14,6 +14,19 @@
       "type": "demo"
     },
     {
+      "name": "carousel",
+      "componentArray": [
+        {
+          "componentName": "carouselcomponent",
+          "filesrc": "components/carousel/carousel1.tsx",
+          "iframeSrc": "live-components/carouselcomponent",
+          "parentlink": "carousel",
+          "parentName": "carousel"
+        }
+      ],
+      "type": "carousel"
+    },
+    {
       "name": "form",
       "componentArray": [
         {
