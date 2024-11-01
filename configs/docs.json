@@ -13,6 +13,49 @@
       ],
       "type": "demo"
     },
+
+    {
+      "name": "error",
+      "componentArray": [
+        {
+          "componentName": "errorcomponent",
+          "filesrc": "components/error/error.tsx",
+          "iframeSrc": "live-components/errorcomponent",
+          "parentlink": "error",
+          "parentName": "error"
+        }
+      ],
+      "type": "error"
+    },
+
+    {
+      "name": "modal",
+      "componentArray": [
+        {
+          "componentName": "modalcomponent",
+          "filesrc": "components/modal/modal.tsx",
+          "iframeSrc": "live-components/modalcomponent",
+          "parentlink": "modal",
+          "parentName": "modal"
+        }
+      ],
+      "type": "modals"
+    },
+
+    {
+      "name": "price",
+      "componentArray": [
+        {
+          "componentName": "pricecomponent",
+          "filesrc": "components/price/price.tsx",
+          "iframeSrc": "live-components/pricecomponent",
+          "parentlink": "price",
+          "parentName": "price"
+        }
+      ],
+      "type": "modals"
+    },
+
     {
       "name": "table",
       "componentArray": [

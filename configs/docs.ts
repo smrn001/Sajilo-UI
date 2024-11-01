@@ -9,6 +9,10 @@ export const SpecialComponents = [
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/navbar', name: 'Navbar ', new: true },
   { href: '/components/table', name: 'Table ' },
+  { href: '/components/error', name: 'Error ' },
+  { href: '/components/modal', name: 'Modal ' },
+  { href: '/components/price', name: 'Price ' },
+
 ];
 
 // export const MainComponents = [
