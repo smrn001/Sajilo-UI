@@ -2,20 +2,18 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='border-t pb-24 pt-4 xl:pb-4 absolute w-full z-[2]'>
-      <div className='container mx-auto'>
-        <p className='text-balance text-center text-sm leading-loose text-muted-foreground md:text-left'>
-          The source code is available on{' '}
-          <a
-            href='#'
-            target='_blank'
-            rel='noreferrer'
-            className='font-medium underline underline-offset-4'
-          >
-            GitHub
-          </a>
-          .
+    <footer className="relative w-full border-t bg-gray-50 dark:bg-gray-900 py-8 xl:py-4">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+        
+        {/* Footer Message */}
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          Built with care by Sajilo UI. Follow our journey!
         </p>
+
+        {/* Contact & Copyright Section */}
+        <div className="text-sm text-gray-600 dark:text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Sajilo UI. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

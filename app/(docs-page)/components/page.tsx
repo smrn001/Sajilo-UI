@@ -46,7 +46,7 @@ const appsDesign = [
 export default function Home() {
   return (
     <>
-      <div className='pt-20 pb-5'>
+      <div className='pt-20 pb-5 min-h-[90vh]'>
         <h1
           className={'sm:text-3xl text-2xl font-semibold tracking-tight pb-1'}
         >
@@ -55,7 +55,7 @@ export default function Home() {
 
         <p className='md:text-lg text-sm text-muted-foreground lg:w-[80%]'>
           Beautifully designed components that you can copy and paste into your
-          apps. Accessible. Customizable. Open Source.
+          apps. Accessible. Customizable. 
         </p>
         <>
           <div className='grid md:grid-cols-3 grid-cols-2 gap-6 py-4'>
