@@ -83,6 +83,20 @@
           "iframeSrc": "live-components/footercomponent",
           "parentlink": "footer",
           "parentName": "footer"
+        },
+        {
+          "componentName": "footercomponent2",
+          "filesrc": "components/footers/footer2.tsx",
+          "iframeSrc": "live-components/footercomponent2",
+          "parentlink": "footer",
+          "parentName": "footer"
+        },
+        {
+          "componentName": "footercomponent3",
+          "filesrc": "components/footers/footer3.tsx",
+          "iframeSrc": "live-components/footercomponent3",
+          "parentlink": "footer",
+          "parentName": "footer"
         }
       ],
       "type": "footer"
