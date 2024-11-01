@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 
 export default function Drawer() {
@@ -12,7 +13,7 @@ export default function Drawer() {
       {/* Button to Open Drawer */}
       <button
         onClick={toggleDrawer}
-        className="p-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600"
+        className='p-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600'
       >
         Open Drawer
       </button>
@@ -31,23 +32,38 @@ export default function Drawer() {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <div className="p-4 flex justify-between items-center border-b border-gray-200">
-          <h2 className="text-lg font-semibold">Menu</h2>
-          <button onClick={toggleDrawer} className="text-gray-500 hover:text-gray-700">
+        <div className='p-4 flex justify-between items-center border-b border-gray-200'>
+          <h2 className='text-lg font-semibold'>Menu</h2>
+          <button
+            onClick={toggleDrawer}
+            className='text-gray-500 hover:text-gray-700'
+          >
             &times;
           </button>
         </div>
-        <div className="p-4">
-          <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+        <div className='p-4'>
+          <a
+            href='#'
+            className='block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded'
+          >
             Home
           </a>
-          <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+          <a
+            href='#'
+            className='block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded'
+          >
             About
           </a>
-          <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+          <a
+            href='#'
+            className='block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded'
+          >
             Services
           </a>
-          <a href="#" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded">
+          <a
+            href='#'
+            className='block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded'
+          >
             Contact
           </a>
         </div>
