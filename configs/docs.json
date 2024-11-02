@@ -15,6 +15,20 @@
     },
 
     {
+      "name": "bottom",
+      "componentArray": [
+        {
+          "componentName": "bottomcomponent",
+          "filesrc": "components/bottom/bottom.tsx",
+          "iframeSrc": "live-components/bottomcomponent",
+          "parentlink": "bottom",
+          "parentName": "bottom"
+        }
+      ],
+      "type": "bottom"
+    },
+    
+    {
       "name": "error",
       "componentArray": [
         {
@@ -215,8 +229,8 @@
           "iframeSrc": "live-components/navbarcomponent2",
           "parentlink": "navbar",
           "parentName": "navbar"
-        }
-,
+        },
+        
         {
           "componentName": "navbarcomponent3",
           "filesrc": "components/navbar/piyush.tsx",

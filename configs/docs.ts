@@ -3,16 +3,18 @@ export const SpecialComponents = [
   { href: '/components/card', name: 'Cards'},
   { href: '/components/carousel', name: 'Carousel' },
   { href: '/components/demo', name: 'Demo' },
-  { href: '/components/drawer', name: 'Drawer' },
+  { href: '/components/drawer', name: 'Drawer', new:true },
   { href: '/components/error', name: 'Error' },
   { href: '/components/footers', name: 'Footers' },
   { href: '/components/form', name: 'Form' },
   { href: '/components/hero', name: 'Hero Section' },
-  { href: '/components/modal', name: 'Modal' },
-  { href: '/components/navbar', name: 'Navbar', new: true },
+  { href: '/components/modal', name: 'Modal', new: true },
+  { href: '/components/navbar', name: 'Navbar'},
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/price', name: 'Price' },
   { href: '/components/table', name: 'Table' },
+  { href: '/components/bottom', name: 'Bottom Navbar', new: true },
+
 ];
 // export const MainComponents = [
 //   {
