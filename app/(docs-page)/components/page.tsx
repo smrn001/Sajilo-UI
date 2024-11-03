@@ -40,6 +40,18 @@ const appsDesign = [
     name: 'footer',
     imgSrc: preview.footer,
   },
+  {
+    id: 'breadcrumb',
+    url: '/components/breadcrumb',
+    name: 'breadcrumb',
+    imgSrc: preview.breadcrumbs,
+  },
+  {
+    id: 'Price',
+    url: '/components/price',
+    name: 'pricing',
+    imgSrc: preview.pricing,
+  },
 
 ];
 
