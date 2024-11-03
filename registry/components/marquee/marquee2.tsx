@@ -77,9 +77,8 @@ const MarqueeDemo = () => (
   <div className='relative flex flex-col items-center justify-center w-full overflow-hidden rounded-lg py-20 '>
     {/* First Row Marquee */}
     <Marquee
-      loop={100}
+      loop={10}
       autoFill
-      pauseOnHover={true}
       direction='left'
       speed={50}
       className='py-4'
@@ -90,10 +89,9 @@ const MarqueeDemo = () => (
     </Marquee>
 
     {/* Second Row Marquee */}
-    <div className='mt-2'>
+    <div className='mt-1'>
       <Marquee
-        pauseOnHover={true}
-        loop={100}
+        loop={10}
         autoFill
         direction='right'
         speed={50}
