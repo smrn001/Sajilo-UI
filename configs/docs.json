@@ -15,6 +15,34 @@
     },
 
     {
+      "name": "breadcrumb",
+      "componentArray": [
+        {
+          "componentName": "breadcrumbcomponent",
+          "filesrc": "components/breadcrumb/breadcrumb.tsx",
+          "iframeSrc": "live-components/breadcrumbcomponent",
+          "parentlink": "breadcrumb",
+          "parentName": "breadcrumb"
+        }
+      ],
+      "type": "breadcrumb"
+    },
+
+    {
+      "name": "notification",
+      "componentArray": [
+        {
+          "componentName": "notificationcomponent",
+          "filesrc": "components/notification/notification.tsx",
+          "iframeSrc": "live-components/notificationcomponent",
+          "parentlink": "notification",
+          "parentName": "notification"
+        }
+      ],
+      "type": "notification"
+    },
+
+    {
       "name": "bottom",
       "componentArray": [
         {

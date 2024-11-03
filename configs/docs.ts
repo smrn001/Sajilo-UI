@@ -14,6 +14,9 @@ export const SpecialComponents = [
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/price', name: 'Price' },
   { href: '/components/table', name: 'Table' },
+  { href: '/components/breadcrumb', name: 'Breadcrumbs Notification', new: true },
+  { href: '/components/notification', name: 'Toast Notification', new: true },
+
 
 ];
 // export const MainComponents = [
