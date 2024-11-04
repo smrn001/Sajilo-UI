@@ -91,6 +91,13 @@
           "iframeSrc": "live-components/errorcomponent",
           "parentlink": "error",
           "parentName": "error"
+        },
+        {
+          "componentName": "errorcomponent2",
+          "filesrc": "components/error/notfoundpage.tsx",
+          "iframeSrc": "live-components/errorcomponent2",
+          "parentlink": "error",
+          "parentName": "error"
         }
       ],
       "type": "error"
