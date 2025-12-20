@@ -322,6 +322,32 @@
         
       ],
       "type": "hello"
+    },
+    {
+      "name": "Risk Dashboard",
+      "componentArray": [
+        {
+          "componentName": "riskdashboardcomponent",
+          "filesrc": "components/risk-dashboard/leadership-risk-dashboard.tsx",
+          "iframeSrc": "live-components/riskdashboardcomponent",
+          "parentlink": "risk-dashboard",
+          "parentName": "risk-dashboard"
+        }
+      ],
+      "type": "risk-dashboard"
+    },
+    {
+      "name": "Compliance Dashboard",
+      "componentArray": [
+        {
+          "componentName": "compliancecomponent",
+          "filesrc": "components/compliance-dashboard/compliance-governance.tsx",
+          "iframeSrc": "live-components/compliancecomponent",
+          "parentlink": "compliance-dashboard",
+          "parentName": "compliance-dashboard"
+        }
+      ],
+      "type": "compliance-dashboard"
     }
   ]
 }
