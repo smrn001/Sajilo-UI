@@ -4,6 +4,7 @@ export const SpecialComponents = [
   { href: '/components/breadcrumb', name: 'Breadcrumb' },
   { href: '/components/card', name: 'Cards' },
   { href: '/components/carousel', name: 'Carousel' },
+  { href: '/components/compliance-dashboard', name: 'Compliance Dashboard', new: true },
   { href: '/components/demo', name: 'Demo' },
   { href: '/components/drawer', name: 'Drawer' },
   { href: '/components/error', name: 'Error' },
@@ -15,21 +16,8 @@ export const SpecialComponents = [
   { href: '/components/navbar', name: 'Navbar' },
   { href: '/components/parallax', name: 'Parallax' },
   { href: '/components/price', name: 'Price' },
+  { href: '/components/risk-dashboard', name: 'Risk Dashboard', new: true },
   { href: '/components/skeletonLoader', name: 'Skeleton Loader' },
   { href: '/components/table', name: 'Table' },
   { href: '/components/notification', name: 'Toast '},
 ];
-// export const MainComponents = [
-//   {
-//     href: '/components/blur-vignette',
-//     name: 'Blur Vignette',
-
-//     component: 'creative',
-//   },
-// piyush ko push
-//   {
-//     href: '/components/motion-number',
-//     name: 'Motion Number',
-//     component: 'creative',
-//   },
-// ];
